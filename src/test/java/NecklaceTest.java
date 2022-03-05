@@ -64,4 +64,10 @@ public class NecklaceTest {
         Assert.assertEquals(ruby, list.get(0));
         Assert.assertEquals(topaz, list.get(1));
     }
+
+    @Test
+    public void searchByClarityIfNotHit() {
+        List<Gem> list = necklace.searchByClarity(0, 5);
+        Assert.assertEquals(0, list.size());
+    }
 }
