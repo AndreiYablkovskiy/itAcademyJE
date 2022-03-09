@@ -1,5 +1,6 @@
-public abstract class Gem {
+package Gems;
 
+public abstract class Gem {
     private double carat;
     private double clarity; // не наше точной инфы про прозрачность, ввожу рандомные значения
     private double priceForOneCarat; // цена за один карат, для подсчета стоимости, ввожу выдуманые значения

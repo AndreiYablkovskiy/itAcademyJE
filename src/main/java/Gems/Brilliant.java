@@ -1,3 +1,5 @@
+package Gems;
+
 public class Brilliant extends Gem {
 
     public Brilliant(double carat, double clarity, double priceForOneCarat) {
@@ -6,6 +8,6 @@ public class Brilliant extends Gem {
 
     @Override
     public String toString() {
-        return "Brilliant{} " + super.toString();
+        return "Gems.Brilliant{} " + super.toString();
     }
 }

@@ -1,3 +1,6 @@
+package Jewels;
+
+import Gems.Gem;
 import java.util.List;
 
 public abstract class Jewel {

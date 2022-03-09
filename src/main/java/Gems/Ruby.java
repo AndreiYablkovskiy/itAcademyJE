@@ -1,3 +1,5 @@
+package Gems;
+
 public class Ruby extends Gem {
 
     public Ruby(double carat, double clarity, double priceForOneCarat) {
@@ -6,6 +8,6 @@ public class Ruby extends Gem {
 
     @Override
     public String toString() {
-        return "Ruby{} " + super.toString();
+        return "Gems.Ruby{} " + super.toString();
     }
 }

@@ -1,3 +1,5 @@
+package Gems;
+
 public class Topaz extends Gem {
 
     public Topaz(double carat, double clarity, double priceForOneCarat) {
@@ -6,6 +8,6 @@ public class Topaz extends Gem {
 
     @Override
     public String toString() {
-        return "Topaz{} " + super.toString();
+        return "Gems.Topaz{} " + super.toString();
     }
 }

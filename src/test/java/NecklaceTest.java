@@ -1,3 +1,8 @@
+import Gems.Brilliant;
+import Gems.Gem;
+import Gems.Ruby;
+import Gems.Topaz;
+import Jewels.Necklace;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,6 +15,7 @@ public class NecklaceTest {
     private Gem ruby;
     private Gem topaz;
     private Necklace necklace;
+    private Service service;
 
     @Before
     public void init() {
@@ -21,6 +27,7 @@ public class NecklaceTest {
         list.add(ruby);
         list.add(topaz);
         necklace = new Necklace(list);
+        service = new Service(necklace);
     }
 
     @Test
@@ -43,7 +50,7 @@ public class NecklaceTest {
 
     @Test
     public void sortLowToHighPriceTest() {
-        necklace.sortLowToHighPrice();
+        service.sortLowToHighPrice();
         Assert.assertEquals(ruby, necklace.getGemsList().get(0));
         Assert.assertEquals(topaz, necklace.getGemsList().get(1));
         Assert.assertEquals(brilliant, necklace.getGemsList().get(2));
@@ -51,7 +58,7 @@ public class NecklaceTest {
 
     @Test
     public void sortHighToLowPriceTest() {
-        necklace.sortHighToLowPrice();
+        service.sortHighToLowPrice();
         Assert.assertEquals(brilliant, necklace.getGemsList().get(0));
         Assert.assertEquals(topaz, necklace.getGemsList().get(1));
         Assert.assertEquals(ruby, necklace.getGemsList().get(2));
@@ -59,7 +66,7 @@ public class NecklaceTest {
 
     @Test
     public void searchByClarityTest() {
-        List<Gem> list = necklace.searchByClarity(12, 25);
+        List<Gem> list = service.searchByClarity(12, 25);
         Assert.assertEquals(2, list.size());
         Assert.assertEquals(ruby, list.get(0));
         Assert.assertEquals(topaz, list.get(1));
@@ -67,7 +74,7 @@ public class NecklaceTest {
 
     @Test
     public void searchByClarityIfNotHit() {
-        List<Gem> list = necklace.searchByClarity(0, 5);
+        List<Gem> list = service.searchByClarity(0, 5);
         Assert.assertEquals(0, list.size());
     }
 }

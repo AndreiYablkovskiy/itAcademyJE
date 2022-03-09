@@ -1,3 +1,7 @@
+import Gems.Brilliant;
+import Gems.Gem;
+import Gems.Ruby;
+import Gems.Topaz;
 import org.junit.Assert;
 import org.junit.Test;
 
