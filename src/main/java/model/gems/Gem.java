@@ -1,4 +1,4 @@
-package Gems;
+package model.gems;
 
 public abstract class Gem {
     private double carat;
@@ -42,7 +42,7 @@ public abstract class Gem {
 
     @Override
     public String toString() {
-        return "Gems{" +
+        return "model.gems{" +
                 "carat=" + carat +
                 ", clarity=" + clarity +
                 ", priceForOneCarat=" + priceForOneCarat +

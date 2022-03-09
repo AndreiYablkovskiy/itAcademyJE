@@ -1,14 +1,16 @@
-import Gems.Gem;
-import Jewels.Jewel;
+package service;
+
+import model.gems.Gem;
+import model.jewels.Jewel;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class Service {
+public class NecklaceService {
     private Jewel jewel;
 
-    public Service(Jewel jewel) {
+    public NecklaceService(Jewel jewel) {
         this.jewel = jewel;
     }
 

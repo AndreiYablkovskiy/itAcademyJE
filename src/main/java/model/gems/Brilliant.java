@@ -1,4 +1,4 @@
-package Gems;
+package model.gems;
 
 public class Brilliant extends Gem {
 
@@ -8,6 +8,6 @@ public class Brilliant extends Gem {
 
     @Override
     public String toString() {
-        return "Gems.Brilliant{} " + super.toString();
+        return "model.gems.Brilliant{} " + super.toString();
     }
 }

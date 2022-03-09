@@ -1,4 +1,4 @@
-package Gems;
+package model.gems;
 
 public class Topaz extends Gem {
 
@@ -8,6 +8,6 @@ public class Topaz extends Gem {
 
     @Override
     public String toString() {
-        return "Gems.Topaz{} " + super.toString();
+        return "model.gems.Topaz{} " + super.toString();
     }
 }

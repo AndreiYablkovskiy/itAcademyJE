@@ -1,4 +1,4 @@
-package Gems;
+package model.gems;
 
 public class Ruby extends Gem {
 
@@ -8,6 +8,6 @@ public class Ruby extends Gem {
 
     @Override
     public String toString() {
-        return "Gems.Ruby{} " + super.toString();
+        return "model.gems.Ruby{} " + super.toString();
     }
 }

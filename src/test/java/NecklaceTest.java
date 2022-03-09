@@ -1,11 +1,12 @@
-import Gems.Brilliant;
-import Gems.Gem;
-import Gems.Ruby;
-import Gems.Topaz;
-import Jewels.Necklace;
+import model.gems.Brilliant;
+import model.gems.Gem;
+import model.gems.Ruby;
+import model.gems.Topaz;
+import model.jewels.Necklace;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import service.NecklaceService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +16,7 @@ public class NecklaceTest {
     private Gem ruby;
     private Gem topaz;
     private Necklace necklace;
-    private Service service;
+    private NecklaceService service;
 
     @Before
     public void init() {
@@ -27,7 +28,7 @@ public class NecklaceTest {
         list.add(ruby);
         list.add(topaz);
         necklace = new Necklace(list);
-        service = new Service(necklace);
+        service = new NecklaceService(necklace);
     }
 
     @Test
